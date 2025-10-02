@@ -47,17 +47,14 @@ document.addEventListener("DOMContentLoaded", () => {
       const price = (item.price_cents / 100).toFixed(2);
 
       const cardHTML = `
-        <a href="${item.ecom_url}" target="_blank" style="text-decoration:none; color:inherit;">
-          <div class="dish-card">
-            <div class="fav"><i class="fas fa-heart"></i></div>
-            <img src="${item.image_url}" alt="${item.name}">
-            <h4>${item.name}</h4>
-            <p>${item.variation}</p>
-            <div class="price-rating">
-              <div class="price">${item.currency} ${price}</div>
-            </div>
-          </div>
-        </a>
+        <div class="dish-card">
+          <div class="fav"><i class="fas fa-heart"></i></div>
+          <img src="${item.image_url}" alt="${item.name}">
+          <h4>${item.name}</h4>
+          <p>${item.variation}</p>
+          <div class="price">${item.currency} ${price}</div>
+          <a href="${item.ecom_url}" target="_blank" class="btn-order">Order Now</a>
+        </div>
       `;
 
       container.innerHTML += cardHTML;
