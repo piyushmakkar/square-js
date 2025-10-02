@@ -55,8 +55,10 @@ document.addEventListener("DOMContentLoaded", () => {
           <img src="${item.image_url}" alt="${item.name}">
           <h4>${item.name}</h4>
           <p>${item.variation}</p>
-          <div class="price">${item.currency} ${price}</div>
-          <a href="${item.ecom_url}" target="_blank" class="btn-order">Order Now</a>
+          <div class="price-btn">
+  <div class="price">${item.currency} ${price}</div>
+  <a href="${item.ecom_url}" target="_blank" class="btn-order">Order Now</a>
+</div>
         </div>
       `;
 
