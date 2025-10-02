@@ -55,7 +55,6 @@ document.addEventListener("DOMContentLoaded", () => {
             <p>${item.variation}</p>
             <div class="price-rating">
               <div class="price">${item.currency} ${price}</div>
-              <div class="rating"><span>★</span> 4.5</div>
             </div>
           </div>
         </a>
