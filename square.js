@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // --- Generate Dish Cards ---
   items.forEach((item, index) => {
     const price = (item.price_cents / 100).toFixed(2);
-    const cardClass = index % 2 === 0 ? 'dish-card' : 'dish-card-un';
-    const heartClass = index % 2 === 0 ? 'fas' : 'far';
+     const cardClass = index === 0 ? 'dish-card' : 'dish-card-un';
+      const heartClass = index === 0 ? 'fas' : 'far';
 
     const cardHTML = `
       <div class="${cardClass}">
