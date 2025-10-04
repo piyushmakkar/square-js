@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // --- Dish Cards ---
-  const items = [
+  const items = const items = [
   {
     "name": "Chicken Tikka Masala Bowl",
     "variation": "Regular",
@@ -61,8 +61,41 @@ document.addEventListener("DOMContentLoaded", () => {
     "currency": "USD",
     "image_url": "https://example.com/images/35ZINZKMGTQ2R2I5UBI5GIZZ.jpeg",
     "ecom_url": "https://www.amboeats.com/product/paneer-tikka-masala-with-chickpeas-plate/J4PZB63L7JO4ADB7ZD7L25QM"
+  },
+  {
+    "name": "Chicken Tikka Masala with Okra Plate",
+    "variation": "Regular",
+    "price_cents": 1499,
+    "currency": "USD",
+    "image_url": "https://example.com/images/okra-plate.jpeg",
+    "ecom_url": "https://www.amboeats.com/product/chicken-tikka-masala-with-okra-plate/PLACEHOLDER"
+  },
+  {
+    "name": "Chicken Tikka Masala with Cauliflower Plate",
+    "variation": "Regular",
+    "price_cents": 1499,
+    "currency": "USD",
+    "image_url": "https://example.com/images/cauliflower-plate.jpeg",
+    "ecom_url": "https://www.amboeats.com/product/chicken-tikka-masala-with-cauliflower-plate/PLACEHOLDER"
+  },
+  {
+    "name": "Low Carb Chicken Tikka with Cauliflower Plate",
+    "variation": "Regular",
+    "price_cents": 1499,
+    "currency": "USD",
+    "image_url": "https://example.com/images/low-carb-cauliflower-plate.jpeg",
+    "ecom_url": "https://www.amboeats.com/product/low-carb-chicken-tikka-with-cauliflower-plate/PLACEHOLDER"
+  },
+  {
+    "name": "Chicken Tikka Masala with Chickpeas Plate",
+    "variation": "Regular",
+    "price_cents": 1499,
+    "currency": "USD",
+    "image_url": "https://example.com/images/chickpeas-plate.jpeg",
+    "ecom_url": "https://www.amboeats.com/product/chicken-tikka-masala-with-chickpeas-plate/PLACEHOLDER"
   }
 ];
+
 
 
   const container = document.getElementById("dish-cards");
