@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // --- Dish Cards ---
-  const items = const items = [
+  const items  = [
   {
     "name": "Chicken Tikka Masala Bowl",
     "variation": "Regular",
