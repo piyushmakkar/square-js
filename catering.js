@@ -14,31 +14,56 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // --- Dish Cards ---
   const items = [
-    {
-      "name": "Chilli Shrimp Bowl",
-      "variation": "Regular",
-      "price_cents": 1799,
-      "currency": "USD",
-      "image_url": "https://132496695.cdn6.editmysite.com/uploads/1/3/2/4/132496695/2DQCQXAZLKDLPB4FDYBJXDDF.jpeg?width=2400&optimize=medium",
-      "ecom_url": "https://www.amboeats.com/product/chilli-shrimp-bowl/4GUXZ4NX2MMNY4AZHORDTNBE"
-    },
-    {
-      "name": "Chilli Shrimp with Okra Plate",
-      "variation": "Regular",
-      "price_cents": 1700,
-      "currency": "USD",
-      "image_url": "https://132496695.cdn6.editmysite.com/uploads/1/3/2/4/132496695/X247MFOND27K5N5Y5YGDIKF4.jpeg?width=2400&optimize=medium",
-      "ecom_url": "https://www.amboeats.com/product/chilli-shrimp-with-okra-plate/AT4OG2K7C5VUSFZWNT2RRL7A"
-    },
-    {
-      "name": "Veggie Plate",
-      "variation": "Regular",
-      "price_cents": 1599,
-      "currency": "USD",
-      "image_url": "https://132496695.cdn6.editmysite.com/uploads/1/3/2/4/132496695/GHCKQGMVKRHDPTOGOVFJNFPF.jpeg?width=2400&optimize=medium",
-      "ecom_url": "https://www.amboeats.com/product/veggie-plate/K2PWM7FOGF2W4M2BOZ3XNBRD"
-    }
-  ];
+  {
+    "name": "Chicken Tikka Masala Bowl",
+    "variation": "Regular",
+    "price_cents": 1699,
+    "currency": "USD",
+    "image_url": "https://example.com/images/FNY5UD3H6CKT3BLVLYGA7TD4.jpeg",
+    "ecom_url": "https://www.amboeats.com/product/chicken-tikka-masala-bowl/2WWK4RLJFEZBUKOO6DJGV5QX"
+  },
+  {
+    "name": "Chilli Shrimp Bowl",
+    "variation": "Regular",
+    "price_cents": 1799,
+    "currency": "USD",
+    "image_url": "https://132496695.cdn6.editmysite.com/uploads/1/3/2/4/132496695/2DQCQXAZLKDLPB4FDYBJXDDF.jpeg?width=2400&optimize=medium",
+    "ecom_url": "https://www.amboeats.com/product/chilli-shrimp-bowl/4GUXZ4NX2MMNY4AZHORDTNBE"
+  },
+  {
+    "name": "Chilli Paneer Bowl",
+    "variation": "Regular",
+    "price_cents": 1599,
+    "currency": "USD",
+    "image_url": "https://example.com/images/E3MXT2M4PAUJ6QIGQBGDE2VB.jpeg",
+    "ecom_url": "https://www.amboeats.com/product/chilli-paneer-bowl/2WUYLCKCAIL4DJLMAT7YDKUD"
+  },
+  {
+    "name": "Chilli Shrimp with Okra Plate",
+    "variation": "Regular",
+    "price_cents": 1700,
+    "currency": "USD",
+    "image_url": "https://example.com/images/X247MFOND27K5N5Y5YGDIKF4.jpeg",
+    "ecom_url": "https://www.amboeats.com/product/chilli-shrimp-with-okra-plate/AT4OG2K7C5VUSFZWNT2RRL7A"
+  },
+  {
+    "name": "Veggie Plate",
+    "variation": "Regular",
+    "price_cents": 1599,
+    "currency": "USD",
+    "image_url": "https://example.com/images/GHCKQGMVKRHDPTOGOVFJNFPF.jpeg",
+    "ecom_url": "https://www.amboeats.com/product/veggie-plate/K2PWM7FOGF2W4M2BOZ3XNBRD"
+  },
+  {
+    "name": "Paneer Tikka Masala with Chickpeas Plate",
+    "variation": "Regular",
+    "price_cents": 1499,
+    "currency": "USD",
+    "image_url": "https://example.com/images/35ZINZKMGTQ2R2I5UBI5GIZZ.jpeg",
+    "ecom_url": "https://www.amboeats.com/product/paneer-tikka-masala-with-chickpeas-plate/J4PZB63L7JO4ADB7ZD7L25QM"
+  }
+];
+
 
   const container = document.getElementById("dish-cards");
 
