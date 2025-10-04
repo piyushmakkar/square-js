@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <h4>${item.name}</h4>
           <p>${item.variation}</p>
           <div class="price-btn">
-            <div class="price">${item.currency} ${price}</div>
+            <div class="price">$ ${price}</div>
             <button onclick="openOrderLink('${item.ecom_url}')" class="btn-order">Order Now</button>
           </div>
         </div>
