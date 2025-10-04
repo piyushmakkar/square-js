@@ -99,36 +99,59 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   const container = document.getElementById("dish-cards");
+  const leftBtn = document.getElementById("leftBtn");
+  const rightBtn = document.getElementById("rightBtn");
 
-  if (container) {
-    items.forEach((item, index) => {
-      const price = (item.price_cents / 100).toFixed(2);
+  // Generate cards
+  items.forEach((item, index) => {
+    const price = (item.price_cents / 100).toFixed(2);
+    const cardClass = index % 2 === 0 ? 'dish-card' : 'dish-card-un';
+    const heartClass = index % 2 === 0 ? 'fas' : 'far';
 
-      // Card class and heart type based on index
-      const cardClass = index === 0 ? 'dish-card' : 'dish-card-un';
-      const heartClass = index === 0 ? 'fas' : 'far';
-
-      const cardHTML = `
-        <div class="${cardClass}">
-          <div class="fav"><i class="${heartClass} fa-heart"></i></div>
-          <img src="${item.image_url}" alt="${item.name}">
-          <h4>${item.name}</h4>
-          <p>${item.variation}</p>
-          <div class="price-btn">
-            <div class="price">${item.currency} ${price}</div>
-            <button onclick="openOrderLink('${item.ecom_url}')" class="btn-order">Order Now</button>
-          </div>
+    const cardHTML = `
+      <div class="${cardClass}">
+        <div class="fav"><i class="${heartClass} fa-heart"></i></div>
+        <img src="${item.image_url}" alt="${item.name}">
+        <h4>${item.name}</h4>
+        <p>${item.variation}</p>
+        <div class="price-btn">
+          <div class="price">${item.currency} ${price}</div>
+          <button onclick="openOrderLink('${item.ecom_url}')" class="btn-order">Order Now</button>
         </div>
-      `;
+      </div>
+    `;
+    container.innerHTML += cardHTML;
+  });
 
-      container.innerHTML += cardHTML;
-    });
-  }
+  // Scrollable carousel
+  const cardWidth = container.querySelector('.dish-card, .dish-card-un').offsetWidth;
+  const gap = 20; // match CSS gap
+  const scrollAmount = (cardWidth + gap) * 3; // scroll 3 cards
+
+  leftBtn.addEventListener('click', () => {
+    container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  });
+
+  rightBtn.addEventListener('click', () => {
+    container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  });
+
+  container.addEventListener('scroll', () => {
+    const scrollLeft = container.scrollLeft;
+    const maxScrollLeft = container.scrollWidth - container.clientWidth;
+
+    leftBtn.disabled = scrollLeft <= 0;
+    rightBtn.disabled = scrollLeft >= maxScrollLeft - 1;
+  });
+
 });
 
-// --- Open Order Link Function ---
+// Open order link
 function openOrderLink(url) {
-  if (url) {
-    window.location.href = url; // Opens in the same tab
-  }
+  if (url) window.location.href = url;
+}
+
+// Dropdown order
+function openOrderLink(url) {
+  if (url) window.location.href = url;
 }
