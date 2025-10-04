@@ -21,19 +21,11 @@ document.addEventListener("DOMContentLoaded", () => {
   ============================== */
   const items = [
     {
-      "name": "Chilli Shrimp Bowl",
-      "variation": "Regular",
-      "price_cents": 1799,
-      "currency": "USD",
-      "image_url": "https://132496695.cdn6.editmysite.com/uploads/1/3/2/4/132496695/2DQCQXAZLKDLPB4FDYBJXDDF.jpeg?width=2400&optimize=medium",
-      "ecom_url": "https://www.amboeats.com/product/chilli-shrimp-bowl/4GUXZ4NX2MMNY4AZHORDTNBE"
-    },
-    {
       "name": "Chicken Tikka Bowl",
       "variation": "Regular",
       "price_cents": 1599,
       "currency": "USD",
-      "image_url": "https://132496695.cdn6.editmysite.com/uploads/1/3/2/4/132496695/QWHYWYFOK47RT6E2ZPKWMDWK.jpeg?width=2400&optimize=medium",
+      "image_url": "https://132496695.cdn6.editmysite.com/uploads/1/3/2/4/132496695/QZN6CWBVE3OU4NVF4JMEDK6T.jpeg?width=2400&optimize=medium",
       "ecom_url": "https://www.amboeats.com/product/chicken-tikka-bowl/VF6ZWNNSKDZ6WIMBPZI7KKY2"
     },
     {
@@ -45,11 +37,19 @@ document.addEventListener("DOMContentLoaded", () => {
       "ecom_url": "https://www.amboeats.com/product/chilli-paneer-bowl/2WUYLCKCAIL4DJLMAT7YDKUD"
     },
     {
+      "name": "Chilli Shrimp Bowl",
+      "variation": "Regular",
+      "price_cents": 1799,
+      "currency": "USD",
+      "image_url": "https://132496695.cdn6.editmysite.com/uploads/1/3/2/4/132496695/2DQCQXAZLKDLPB4FDYBJXDDF.jpeg?width=2400&optimize=medium",
+      "ecom_url": "https://www.amboeats.com/product/chilli-shrimp-bowl/4GUXZ4NX2MMNY4AZHORDTNBE"
+    },
+    {
       "name": "Chilli Shrimp with Okra Plate",
       "variation": "Regular",
       "price_cents": 1700,
       "currency": "USD",
-      "image_url": "https://132496695.cdn6.editmysite.com/uploads/1/3/2/4/132496695/X247MFOND27K5N5Y5YGDIKF4.jpeg?width=2400&optimize=medium",
+      "image_url": "https://132496695.cdn6.editmysite.com/uploads/1/3/2/4/132496695/GAMQ2VFWL3OLFZGOCZGFRHUR.jpeg?width=2400&optimize=medium",
       "ecom_url": "https://www.amboeats.com/product/chilli-shrimp-with-okra-plate/AT4OG2K7C5VUSFZWNT2RRL7A"
     },
     {
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "variation": "Regular",
       "price_cents": 1599,
       "currency": "USD",
-      "image_url": "https://132496695.cdn6.editmysite.com/uploads/1/3/2/4/132496695/GHCKQGMVKRHDPTOGOVFJNFPF.jpeg?width=2400&optimize=medium",
+      "image_url": "https://132496695.cdn6.editmysite.com/uploads/1/3/2/4/132496695/ZN5EUYJ4N7A6227LTBKOHDPC.jpeg?width=2400&optimize=medium",
       "ecom_url": "https://www.amboeats.com/product/veggie-plate/K2PWM7FOGF2W4M2BOZ3XNBRD"
     },
     {
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "variation": "Regular",
       "price_cents": 1499,
       "currency": "USD",
-      "image_url": "https://132496695.cdn6.editmysite.com/uploads/1/3/2/4/132496695/3TB4BVAGP6ZO2EBDIOV2W572.jpeg?width=2400&optimize=medium",
+      "image_url": "https://132496695.cdn6.editmysite.com/uploads/1/3/2/4/132496695/M2232UZMD63I6QL52KMSEO5R.jpeg?width=2400&optimize=medium",
       "ecom_url": "https://www.amboeats.com/product/chicken-tikka-masala-with-okra-plate/PLACEHOLDER"
     },
     {
