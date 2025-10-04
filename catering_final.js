@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "variation": "Regular",
       "price_cents": 1599,
       "currency": "USD",
-      "image_url": "https://132496695.cdn6.editmysite.com/uploads/1/3/2/4/132496695/QZN6CWBVE3OU4NVF4JMEDK6T.jpeg?width=2400&optimize=medium",
+      "image_url": "https://132496695.cdn6.editmysite.com/uploads/1/3/2/4/132496695/66FIYKDXJSLWO7XUXHPPNLRH.jpeg?width=2400&optimize=medium",
       "ecom_url": "https://www.amboeats.com/product/chicken-tikka-bowl/VF6ZWNNSKDZ6WIMBPZI7KKY2"
     },
     {
