@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (container && leftBtn && rightBtn) {
     const cardWidth = container.querySelector('.dish-card, .dish-card-un').offsetWidth;
     const gap = 20; // Match CSS gap
-    const scrollAmount = (cardWidth + gap) * 3; // Scroll 3 cards at a time
+    const scrollAmount = (cardWidth + gap) ; // Scroll 3 cards at a time
 
     leftBtn.addEventListener('click', () => {
       container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
