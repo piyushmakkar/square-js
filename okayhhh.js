@@ -169,5 +169,5 @@ document.addEventListener("DOMContentLoaded", () => {
    Open Order Link Function
 ============================== */
 function openOrderLink(url) {
-  if (url) window.location.href = url;
+   if (url) window.open(url, "_blank");
 }
